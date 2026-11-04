@@ -206,31 +206,13 @@
 // }
 
 Console.Write("Введите первое число: ");
-double num1 = double.Parse(Console.ReadLine());
+int n1 = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число: ");
-double num2 = double.Parse(Console.ReadLine());
-Console.Write("Введите операцию (+, -, *, /): ");
-string o = Console.ReadLine();
-
-switch (o)
-    {
-        case "+":
-            Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
-             break;
-        case "-":
-             Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
-            break;
-        case "*":
-            Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
-            break;
-        case "/":
-            if (num2 != 0)
-            {
-                Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
-            }
-            else
-            {
-                Console.WriteLine("Ошибка: деление на ноль!");
-            }
-            break;
-        }
+int n2 = int.Parse(Console.ReadLine());
+Console.Write("Введите третье число: ");
+int n3 = int.Parse(Console.ReadLine());
+int sum = 0;
+if (n1 > 0) sum += n1;
+if (n2 > 0) sum += n2;
+if (n3 > 0) sum += n3;
+Console.WriteLine($"{sum}");
