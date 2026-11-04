@@ -181,16 +181,26 @@
 //     }
 // }
 
-Console.Write("Введите пароль: ");
-string p1 = Console.ReadLine();
-Console.Write("Подтвердите пароль: ");
-string p2 = Console.ReadLine();
-if (p1 == p2)
+// Console.Write("Введите пароль: ");
+// string p1 = Console.ReadLine();
+// Console.Write("Подтвердите пароль: ");
+// string p2 = Console.ReadLine();
+// if (p1 == p2)
+// {
+//     Console.WriteLine("Пароль принят");
+// }
+// else
+// {
+//     Console.WriteLine("Пароль не принят");
+// }
+
+Console.Write("Введите ваш возраст: ");
+int age = int.Parse(Console.ReadLine());
+if (age >= 18)
 {
-    Console.WriteLine("Пароль принят");
+    Console.WriteLine("Доступ разрешён");
 }
 else
 {
-    Console.WriteLine("Пароль не принят");
+    Console.WriteLine("Доступ запрещён");
 }
-
