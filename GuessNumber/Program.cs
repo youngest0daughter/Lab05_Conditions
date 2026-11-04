@@ -205,14 +205,49 @@
 //     Console.WriteLine("Доступ запрещён");
 // }
 
-Console.Write("Введите первое число: ");
-int n1 = int.Parse(Console.ReadLine());
-Console.Write("Введите второе число: ");
-int n2 = int.Parse(Console.ReadLine());
-Console.Write("Введите третье число: ");
-int n3 = int.Parse(Console.ReadLine());
-int sum = 0;
-if (n1 > 0) sum += n1;
-if (n2 > 0) sum += n2;
-if (n3 > 0) sum += n3;
-Console.WriteLine($"{sum}");
+// Console.Write("Введите первое число: ");
+// int n1 = int.Parse(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int n2 = int.Parse(Console.ReadLine());
+// Console.Write("Введите третье число: ");
+// int n3 = int.Parse(Console.ReadLine());
+// int sum = 0;
+// if (n1 > 0) sum += n1;
+// if (n2 > 0) sum += n2;
+// if (n3 > 0) sum += n3;
+// Console.WriteLine($"{sum}");
+
+Console.WriteLine("Вы стоите перед первой дверью. Перед вами два пути:");
+Console.WriteLine("Путь A: Войти в комнату с огромным драконом.");
+Console.WriteLine("Путь B: Пойти по тёмному коридору.");
+Console.Write("Выберите путь (A/B): ");
+string v = Console.ReadLine();
+if (v == "A")
+{
+    Console.WriteLine("Дракон говорит: Кто не дышит, но живёт; хоть не нужно — много пьёт; и в жизни, и в смерти тело как лёд.");
+    Console.Write("Ваш ответ: ");
+    string a = Console.ReadLine();
+    if (a == "рыба")
+    {
+        Console.WriteLine("Дракон открывает дверь в следующую комнату. Вы прошли!");
+    }
+    else
+    {
+        Console.WriteLine("Дракон съел вас! Игра окончена.");
+    }
+}
+else if (v == "B")
+{
+    Console.WriteLine("Вас ждёт тёмная комната с двумя дверями:");
+    Console.Write("Выберите дверь (1/2): ");
+    string v2 = Console.ReadLine();
+    if (v2 == "1")
+    {
+        Console.WriteLine("Вы нашли сокровища Dungeon Master'а! Победа!");
+    }
+    else if (v2 == "2")
+    {
+        Console.WriteLine("Вы попали в ловушку с ядовитыми шипами. Игра окончена.");
+    }
+}
+    
